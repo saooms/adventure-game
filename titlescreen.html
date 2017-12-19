@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>titlescreen</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/1.css">
+	</head>
+	<body id="body">
+		<nav id="tl">
+			<div class="menu">
+				<i class="fa fa-bars" aria-hidden="true"></i>
+				<i id="fa-exclamation" class="fa fa-exclamation" aria-hidden="true"></i>
+				<content>
+					<button onclick="openinventory()">
+						<p>Inventory</p>
+					</button>
+					<button onclick="restart()">
+						<p>restart (kind of broken)</p>
+					</button>
+				</content>
+			</div>
+		</nav>
+
+		<section id="main">
+			<section class="midt">
+				<h1>Quest of the <b>holy pancakes</b></h1>
+			</section>
+
+			<section id="midb">
+				<button class="starta" onclick="nameinput()">
+					<p>Start</p>
+				</button>
+			</section>
+
+			<section class="br">
+				<main>
+					<h2></h2>	
+					<p><b>///instructions///</b></p>
+					<p>You play this game by choosing out of the avilible options, you can click on the dialog screen to show more dialog.</p>
+					<br><p><b>///random nonsense///</b></p>
+					<p>This is my "adventure game", made totaly with HTML, CSS and JS. it took me way longer than I initualy thought, but it's finished nontheless.<br>
+					The game is mainly dialog based, so a lot of reading. I'm pretty sure it's more a visual novel than a adventure game, but ohwell. I made this game as a project for school, I may or may not finished it 1 week after the deadline, <br>
+					Stijn Ooms</p>
+				</main>
+			</section>
+		</section>
+		<section id="game">
+			<article onclick="dialog()">
+				<h2 id="head">Title</h2>
+				<p id="text">[??]Hey you, are you awake yet?</p>
+				<i class="fa fa-caret-left" aria-hidden="true"></i>
+			</article>
+			<main>
+				<button onclick="" id="option1">
+					<img src="img/sword.png" alt="sword" class="sword"><p id="tp1">option1</p>
+				</button>
+				<button onclick="" id="option2">
+					<img src="img/trident.png" alt="trident" class="trident"><p id="tp2">option2</p>
+				</button>
+				<button onclick="" id="option3">
+					<img src="img/sword.png" alt="sword" class="sword"><img src="img/trident.png" alt="trident" class="trident"><p id="tp3">option3</p>
+				</button>
+			</main>
+		</section>
+
+		<section id="nameing">
+			<input type="text" id="username" value="name">
+			<button onclick="start()"><p>start the adventure</p></button>
+		</section>
+
+		<section id="restart">
+			<p>are you sure you want to restart?</p>
+			<button onclick="softreset()"><p>yeahyeah, just restart already</p></button>
+		</section>
+
+		<img src="img/grim.png" alt="grim" id="grimreaper1">
+
+		<section id="inventory">
+			<main>
+				<i class="fa fa-times fa-2x" aria-hidden="true" onclick="closeinventory()"></i>
+				<div id="top">
+					<content>
+						<img src="img/water.png" alt="water book">
+						<p>it's a book that allows you to go to the abandond river hut</p>
+					</content>
+				</div>	
+				<div id="top">
+					<content>
+						<img src="img/grass.png" alt="grass book">
+						<p>it's a book that allows you to enter the forest</p>
+					</content>
+				</div>
+				<div id="bottem">
+					<content>
+						<img src="img/pouch.png">
+						<p>it's a puoch full of blue gems</p>
+					</content>
+				</div>
+				<div id="bottem">
+					<content>
+						<img src="img/note.png">
+						<p>it's a note from the whitch</p>
+					</content>
+				</div>
+				<div id="bottem">
+					<content>
+						<img src="img/grim.png">
+						<p>it's the blessing of mr. grim...</p>
+					</content>
+				</div>
+			</main>
+		</section>
+
+		<script type="text/javascript" src="js/2.js"></script>
+		<script src="https://use.fontawesome.com/a41769ec85.js"></script>
+	</body>
+</html>

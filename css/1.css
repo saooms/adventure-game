@@ -1,0 +1,512 @@
+html, body {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+
+b {
+	color: orange;
+}
+
+#body {
+	background-image: url(../img/wall.png);
+	width: 100%;
+	height: 100%;
+}
+
+#tl {
+	position: absolute;
+	top: 30px;
+	left: 20px;
+}
+
+.menu {
+	height: 40px;
+	width: 40px;
+	background-color: brown;
+	border-radius: 10%;
+	border: 1px solid;
+}
+
+.menu .fa-bars {
+	position: relative;
+	top: 12.5px;
+	left: 12.5px;
+}
+
+.menu .fa-exclamation {
+	position: absolute;
+	color: yellow;
+	right: 5px;
+	display: none;
+}
+
+.menu:hover content{
+	visibility: visible;
+}
+
+nav content {
+	position: absolute;
+	top: 42px;
+	left: 0;
+	margin-left: -15px;
+	width: 70px; 
+	display: flex;
+	flex-direction: column;
+	visibility: hidden;
+}
+
+nav content button {
+	width: 100%;
+	background-color: brown;
+	color: #fff;
+	cursor: pointer;
+}
+
+nav content button:hover {
+	background-color: rgba(114,29,29,1);
+}
+
+#body #tl {
+	visibility: hidden;
+}
+
+#body .midt {
+	position: absolute;
+	top: 30%;
+	right: 50%;
+	margin-right: -100px;
+	width: 200px;
+	height: 100px;
+	background-color: rgba(0,0,0,0.8);
+	border: 1px solid;
+	border-radius: 10%; 
+}
+
+#body .midt h1 {
+	color: #fff;
+	width: 100px;
+	position: absolute;
+	text-align: center;
+	left: 50%;
+	margin-left: -50px;
+}
+
+#body #midb {
+	position: absolute;
+	top: 60%;
+	right: 50%;
+	margin-right: -50px;
+	width: 100px;
+}
+
+#body .starta {
+	width: 100%;
+	cursor: pointer;
+}
+
+#body .br {
+	position: absolute;
+	top: 350px;
+	right: 50px;
+	width: 300px;
+	height: 400px;
+	background-color: rgba(0,0,0,0.8);
+	color: #fff;
+	padding: 10px;
+}
+
+#body #game {
+	visibility: hidden;
+}
+
+#game article {
+	position: absolute;
+	top: 60px;
+	left: 50%;
+	margin-left: -350px;
+	width: 700px;
+	height: 400px;
+	padding: 10px;
+	background-color: rgba(0,0,0,0.8);
+	border-radius: 5%;
+}
+
+#game article h2, #game article p {
+	color: #fff;
+	margin: 15px 0 0;
+	size: 150%;
+}
+
+#game .fa {
+	color: red;
+	left: 0;
+	position: absolute;
+	animation: 1s text infinite;
+}
+
+#game main {
+	position: absolute;
+	width: 400px;
+	height: 150px;
+	top: 600px;
+	left: 50%;
+	margin-left: -200px;
+	display: flex;
+	flex-direction: column;
+}
+
+#game button {
+	width: 100%;
+	height: 50px;
+	background-color: rgba(126,126,126,0.5);
+	display: block;
+	border-bottom: 2px solid yellow;
+	cursor: pointer;
+}
+
+.sword {
+	position: absolute;
+	left: 15px;
+	width: 10px;
+	height: 40px;
+	float: left;
+	padding-right: 390px;
+}
+
+.trident {
+	position: absolute;
+	left: 0;
+	width: 40px;
+	height: 40px;
+	float: left;
+	padding-right: 360px;
+}
+
+#game button p {
+	color: #fff;
+	margin: 0;
+	height: 100%;
+	font-size: 150%; 
+}
+
+#game button:hover, #game button p:hover {
+	color: red;
+	border-color: red;
+	background-color: black;
+}
+
+#nameing {
+	display: none;
+	background-image: url(../img/name.jpg);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+#nameing input {
+	position: absolute;
+	width: 160px;
+	left: 50%;
+	margin-left: -80px;
+	top: 200px;
+
+}
+
+#nameing button {
+	position: absolute;
+	width: 130px;
+	left: 50%;
+	margin-left: -65px;
+	top: 250px;
+}
+
+#inventory {
+	width: 80%;
+	height: 90%;
+	top: 5%;
+	left: 10%;
+	position: absolute;
+	background-color: rgba(126,126,126,0.7);
+	display: none;
+}
+
+#inventory main {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#inventory i {
+	right: 10px;
+	top: 10px;
+	position: absolute;
+	z-index: 10;
+	cursor: pointer;
+	color: #fff;
+}
+
+#inventory img {
+	min-width: 250px;
+	max-width: 300px;
+	max-height: 300px;
+	border-left: 2px solid;
+	border-right: 2px solid;
+	left: 50%;
+	margin-left: -150px;
+	top: 0;
+	position: relative;
+}
+
+#inventory p {
+	text-align: center;
+	color: #fff;
+}
+
+#inventory div {
+	height: 50%;
+	position: relative;
+	background-color: rgba(0,0,0,0.7);
+}
+
+#inventory content {
+	display: none;
+}
+
+#inventory #top {
+	width: 50%;
+}
+
+#inventory #bottem {
+	width: 33.333%;
+}
+
+#restart {
+	display: none;
+	position: absolute;
+	width: 400px;
+	left: 50%;
+	margin-left: -200px;
+	top: 200px;
+	background-color: rgba(0,0,0,0.7);
+	text-align: center;
+}
+
+#restart p {
+	color: #fff;
+}
+
+#grimreaper1 {
+	display: none;
+	position: absolute;
+	width: 100px;
+	left: 50%;
+	margin-left: -50px;
+	top: 300px;
+}
+
+#grimreaper2 {
+	position: absolute;
+	width: 30px;
+	left: 75px;
+	top: 30px;
+}
+
+.voice {
+	color: #00ceff;
+}
+
+
+
+
+
+#cave {
+	background-image: url(../img/cave.jpg);
+}
+
+#cave #option3, #village #option3, #throne1 #option3, #throne2 #option2, #throne2 #option3, #inn #option2, #inn #option3, #camp #option2, #camp #option3, #book1 #option2, #book1 #option3, #prison1 #option3, #prison2 #option3, #prison2 #option2, #circle #option3, #demonthroneroom1 #option3, #demonthroneroom2 #option2, #demonthroneroom2 #option3, #swamp #option2, #swamp #option3, #changed #option2, #changed #option3, #inn1 #option2, #inn1 #option3, #inn2 #option3, #sleep #option2, #sleep #option3, #prison3 #option3, #prison4 #option2, #prison4 #option3, #death #option1, #death #option2, #death #option3, #novel #option2, #novel #option3, #death2 #option1, #death2 #option2, #death2 #option3, #split2 #option2, #death3 #option1, #death3 #option2, #death3 #option3, #death4 #option1, #death4 #option2, #death4 #option3, #seahut #option3, #hut #option3, #boat #option3, #matrix #option2, #matrix #option3, #pancakes #option3, #temple #option2, #temple #option3, #altar #option3, #grim #option2, #grim #option3, #win #option2, #win #option3, #demonlord #option2, #demonlord #option3, #humanking #option2, #humanking #option3, #end #option1, #end #option2, #end #option3, #win2 #option2, #win2 #option3 {
+	display: none;
+}
+
+#village {
+	background-image: url(../img/hills.jpg);
+}
+
+#courtyard {
+	background-image: url(../img/castle.jpg);
+	background-image: 100%;
+}
+
+#throne1 {
+	background-image: url(../img/throne.jpg);
+}
+
+#throne2 {
+	background-image: url(../img/throne.jpg);
+}
+
+#throne3 {
+	background-image: url(../img/throne.jpg);
+}
+
+#streets {
+	background-image: url(../img/streets.jpg);
+	background-size: 100%;
+}
+
+#inn {
+	background-image: url(../img/inn.jpg);
+	background-size: 100%;
+}
+
+#camp {
+	background-image: url(../img/defendo.jpg);
+}
+
+#book1 {
+	background-image: url(../img/hobby2.jpg);
+}
+
+#prison1 {
+	background-image: url(../img/prison.jpg);
+}
+
+#prison2 {
+	background-image: url(../img/prison.jpg);
+}
+
+#circle {
+	background-image: url(../img/run.jpg);
+	background-size: 120%;
+}
+
+#ruins {
+	background-image: url(../img/demonhide.jpg);
+	background-position: right;
+}
+
+#demonthroneroom3 {
+	background-image: url(../img/thronede.jpg);
+}
+
+#demonthroneroom1, #demonthroneroom2 {
+	background-image: url(../img/thronede.jpg);
+}
+
+#village2 {
+	background-image: url(../img/village.jpg);
+}
+
+#swamp {
+	background-image: url(../img/depri.jpg);
+}
+
+#changed {
+	background-image: url(../img/anders.jpg);
+	background-size: 100%;
+}
+
+#inn1, #inn2 {
+	background-image: url(../img/inn2.jpg);
+}
+
+#sleep {
+	background-image: url(../img/morning.jpg);
+	background-size: 100%;
+}
+
+#prison3, #prison4 {
+	background-image: url(../img/prison2.jpg);
+	background-size: 100%;
+}
+
+#novel {
+	background-image: url(../img/books.jpg);
+	height: 100%;	
+}
+
+#seahut {
+	background-image: url(../img/ship.jpg);
+	background-size: 100%;
+}
+
+#temple, #altar {
+	background-image: url(../img/forest.jpg);
+	background-size: 100%;
+}
+
+#hut {
+	background-image: url(../img/howthough.jpg);
+	background-size: 100%;
+}
+
+#pancakes {
+	background-image: url(../img/holy.jpg);
+	background-size: 100%;
+}
+
+#matrix {
+	background-image: url(../img/matrix.jpeg);
+}
+
+#demonlord {
+	background-image: url(../img/demonlord.jpg);
+}
+
+#humanking {
+	background-image: url(../img/humanking.jpg);
+}
+
+#human {
+	background-image: url(../img/end.jpg);
+}
+
+#end {
+	background-image: url(../img/end.jpg);
+	background-size: 100%;
+}
+
+#boat {
+	background-image: url(../img/boat.JPG);
+	width: 100%;
+}
+
+
+
+
+
+#grim {
+	background-image: url(../img/grimforest.jpg);
+}
+
+#death, #win {
+	background-image: url(../img/death.jpg);
+}
+
+#death2, #win2 {
+	background-image: url(../img/death2.jpg);
+	background-size: 100%;
+}
+
+#death3 {
+	background-image: url(../img/death3.jpg);
+
+}
+
+#death4 {
+	background-image: url(../img/death4.jpg);
+}
+
+#split, #split2 {
+	background-image: url(../img/road.jpg);
+	background-size: 100%;
+}
+
+@keyframes text {
+	0% {left: 0;}
+	75% {left: 10px;}
+	100% {left: 0px;}
+}
